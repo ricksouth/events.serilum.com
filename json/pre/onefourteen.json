@@ -1,0 +1,183 @@
+[
+	{
+		"net.minecraft.util": [ 
+			"SoundEvent"
+		],
+		"net.minecraft.util.text.event": [ 
+			"ClickEvent",
+			"HoverEvent"
+		],
+		"net.minecraftforge.client.event": [ 
+			"ClientChatEvent",
+			"ClientChatReceivedEvent",
+			"ClientPlayerNetworkEvent",
+			"ColorHandlerEvent",
+			"DrawBlockHighlightEvent",
+			"EntityViewRenderEvent",
+			"FOVUpdateEvent",
+			"GuiContainerEvent",
+			"GuiOpenEvent",
+			"GuiScreenEvent",
+			"InputEvent",
+			"InputUpdateEvent",
+			"ModelBakeEvent",
+			"ModelRegistryEvent",
+			"ParticleFactoryRegisterEvent",
+			"PlayerSPPushOutOfBlocksEvent",
+			"RecipesUpdatedEvent",
+			"RenderBlockOverlayEvent",
+			"RenderGameOverlayEvent",
+			"RenderHandEvent",
+			"RenderItemInFrameEvent",
+			"RenderLivingEvent",
+			"RenderPlayerEvent",
+			"RenderSpecificHandEvent",
+			"RenderTooltipEvent",
+			"RenderWorldLastEvent",
+			"ScreenshotEvent",
+			"TextureStitchEvent"
+		],
+		"net.minecraftforge.client.event.sound": [ 
+			"PlaySoundEvent",
+			"PlaySoundSourceEvent",
+			"PlayStreamingSourceEvent",
+			"SoundEvent",
+			"SoundLoadEvent",
+			"SoundSetupEvent"
+		],
+		"net.minecraftforge.event": [ 
+			"AnvilUpdateEvent",
+			"AttachCapabilitiesEvent",
+			"CommandEvent",
+			"DifficultyChangeEvent",
+			"LootTableLoadEvent",
+			"RegistryEvent",
+			"ServerChatEvent",
+			"TagsUpdatedEvent",
+			"TickEvent"
+		],
+		"net.minecraftforge.event.brewing": [ 
+			"PlayerBrewedPotionEvent",
+			"PotionBrewEvent"
+		],
+		"net.minecraftforge.event.enchanting": [ 
+			"EnchantmentLevelSetEvent"
+		],
+		"net.minecraftforge.event.entity": [ 
+			"EntityEvent",
+			"EntityJoinWorldEvent",
+			"EntityMobGriefingEvent",
+			"EntityMountEvent",
+			"EntityStruckByLightningEvent",
+			"EntityTravelToDimensionEvent",
+			"PlaySoundAtEntityEvent",
+			"ProjectileImpactEvent"
+		],
+		"net.minecraftforge.event.entity.item": [ 
+			"ItemEvent",
+			"ItemExpireEvent",
+			"ItemTossEvent"
+		],
+		"net.minecraftforge.event.entity.living": [ 
+			"AnimalTameEvent",
+			"BabyEntitySpawnEvent",
+			"EnderTeleportEvent",
+			"LivingAttackEvent",
+			"LivingDamageEvent",
+			"LivingDeathEvent",
+			"LivingDestroyBlockEvent",
+			"LivingDropsEvent",
+			"LivingEntityUseItemEvent",
+			"LivingEquipmentChangeEvent",
+			"LivingEvent",
+			"LivingExperienceDropEvent",
+			"LivingFallEvent",
+			"LivingHealEvent",
+			"LivingHurtEvent",
+			"LivingKnockBackEvent",
+			"LivingPackSizeEvent",
+			"LivingSetAttackTargetEvent",
+			"LivingSpawnEvent",
+			"LootingLevelEvent",
+			"PotionColorCalculationEvent",
+			"PotionEvent",
+			"ZombieEvent"
+		],
+		"net.minecraftforge.event.entity.player": [ 
+			"AdvancementEvent",
+			"AnvilRepairEvent",
+			"ArrowLooseEvent",
+			"ArrowNockEvent",
+			"AttackEntityEvent",
+			"BonemealEvent",
+			"CriticalHitEvent",
+			"EntityItemPickupEvent",
+			"FillBucketEvent",
+			"ItemFishedEvent",
+			"ItemTooltipEvent",
+			"PlayerContainerEvent",
+			"PlayerDestroyItemEvent",
+			"PlayerEvent",
+			"PlayerFlyableFallEvent",
+			"PlayerInteractEvent",
+			"PlayerPickupXpEvent",
+			"PlayerSetSpawnEvent",
+			"PlayerSleepInBedEvent",
+			"PlayerWakeUpEvent",
+			"SleepingLocationCheckEvent",
+			"SleepingTimeCheckEvent",
+			"UseHoeEvent"
+		],
+		"net.minecraftforge.event.furnace": [ 
+			"FurnaceFuelBurnTimeEvent"
+		],
+		"net.minecraftforge.event.terraingen": [ 
+			"BiomeEvent",
+			"WorldTypeEvent"
+		],
+		"net.minecraftforge.event.village": [ 
+			"VillagerTradesEvent",
+			"VillageSiegeEvent",
+			"WandererTradesEvent"
+		],
+		"net.minecraftforge.event.world": [ 
+			"BlockEvent",
+			"ChunkDataEvent",
+			"ChunkEvent",
+			"ChunkWatchEvent",
+			"ExplosionEvent",
+			"GetCollisionBoxesEvent",
+			"NoteBlockEvent",
+			"PistonEvent",
+			"RegisterDimensionsEvent",
+			"SaplingGrowTreeEvent",
+			"WorldEvent"
+		],
+		"net.minecraftforge.fml.client.event": [ 
+			"ConfigChangedEvent"
+		],
+		"net.minecraftforge.fml.event.lifecycle": [ 
+			"FMLClientSetupEvent",
+			"FMLCommonSetupEvent",
+			"FMLDedicatedServerSetupEvent",
+			"FMLFingerprintViolationEvent",
+			"FMLLoadCompleteEvent",
+			"FMLModIdMappingEvent",
+			"GatherDataEvent",
+			"InterModEnqueueEvent",
+			"InterModProcessEvent",
+			"ModLifecycleEvent"
+		],
+		"net.minecraftforge.fml.event.server": [ 
+			"FMLServerAboutToStartEvent",
+			"FMLServerStartedEvent",
+			"FMLServerStartingEvent",
+			"FMLServerStoppedEvent",
+			"FMLServerStoppingEvent",
+			"ServerLifecycleEvent"
+		],
+		"net.minecraftforge.fml.network": [ 
+			"NetworkEvent"
+		]
+	}
+]
