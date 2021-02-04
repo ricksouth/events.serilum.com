@@ -1,8 +1,4 @@
 $(document).ready(function(e) {
-	if (location.protocol !== "https:") {
-		location.protocol = "https:";
-	}
-
 	loadJsonData($("#mcversions").val());
 });
 
@@ -12,7 +8,9 @@ function loadJsonData(version) {
 		type: "GET",
 		dataType: 'json',
 		success: function(data){
-			var html = "<h2>Showing all events available in Forge for Minecraft version " + $("#mcversions option:selected").text() + ".</h2>";
+			$("#title").html("Forge Event List for Minecraft version " + $("#mcversions option:selected").text() + ".")
+
+			var html = "";
 
 			var packages = data[0];
 			for (var packagename in packages) {
