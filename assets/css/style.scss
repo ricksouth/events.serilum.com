@@ -5,17 +5,20 @@
 
 body,
 html {
-	overflow: hidden;
 	width: 100%;
 }
 
 .panel {
-  width:90%;
-  margin:2em auto;
+	width:90%;
+	margin:2em auto;
 }
 
-h3 span {
+.panel-title h3 span {
 	margin-left: 5px;
+}
+
+.panel-body h3 {
+	word-wrap: break-word;
 }
 
 .headerwrapper {
