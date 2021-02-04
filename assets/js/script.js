@@ -1,4 +1,8 @@
 $(document).ready(function(e) {
+	if (location.protocol !== "https:") {
+		location.protocol = "https:";
+	}
+
 	loadJsonData($("#mcversions").val());
 });
 
