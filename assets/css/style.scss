@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+body,
+html {
+	overflow: hidden;
+	width: 100%;
+}
+
 .panel {
   width:90%;
   margin:2em auto;
@@ -10,4 +16,28 @@
 
 h3 span {
 	margin-left: 5px;
+}
+
+.headerwrapper {
+	margin: 50px 0px 50px 0px;
+}
+
+.header {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	width: 90%;
+	left: 5%;
+}
+
+.header img {
+	float: left;
+	width: 10%;
+}
+
+.header h1 {
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0;
 }
