@@ -12,14 +12,23 @@
 		<script src="/assets/external/js/html5shiv.min.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="/assets/external/css/font-awesome.min.css">
+		<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css'>
 
 		{% include analytics.html %}
 		<!--<script data-ad-client="ca-pub-7103228011189262" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 	</head>
 	<body>
-		<div>
-			<p>Test</p>
-		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{title}}</h3>
+			</div>
+			<div class="panel-body">
+				<p>Forge Event List</p>
+				<h3>Package</h3>
+				<p>Description</p>
+				<pre>VALUES</pre>
+			</div>
+		</div>  
 	</body>
 	<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 	<script type="text/javascript" src="/assets/js/script.js"></script>
