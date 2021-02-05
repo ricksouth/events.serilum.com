@@ -21,6 +21,10 @@ html {
 	word-wrap: break-word;
 }
 
+.panel-body h3:first-child {
+	margin-top: 0px;
+}
+
 .panel-body pre {
 	word-wrap: break-word;
 	font-size: 15px;
