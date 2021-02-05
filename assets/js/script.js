@@ -4,7 +4,7 @@ $(document).ready(function(e) {
 
 function loadJsonData(version) {
 	$.ajax({
-		url: "https://raw.githubusercontent.com/ricksouth/eventlistforge.com/main/json/pre/" + version + ".json",
+		url: "https://raw.githubusercontent.com/ricksouth/eventlistforge.com/main/json/post/" + version + ".json",
 		type: "GET",
 		dataType: 'json',
 		success: function(data){
