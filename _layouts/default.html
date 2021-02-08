@@ -45,7 +45,11 @@
 				<pre>SoundEvent</pre>
 				<h3>net.minecraft.util.text.event</h3>
 				<pre>ClickEvent</pre>
+				<pre>ClickEvent.Action</pre>
 				<pre>HoverEvent</pre>
+				<pre>HoverEvent.Action</pre>
+				<pre>HoverEvent.EntityHover</pre>
+				<pre>HoverEvent.ItemHover</pre>
 				<h3>net.minecraftforge.client.event</h3>
 				<pre>BackgroundDrawnEvent</pre>
 				<pre>ClickInputEvent</pre>
@@ -53,35 +57,62 @@
 				<pre>ClientChatReceivedEvent</pre>
 				<pre>ClientPlayerNetworkEvent</pre>
 				<pre>ColorHandlerEvent</pre>
+				<pre>ColorHandlerEvent.Block</pre>
+				<pre>ColorHandlerEvent.Item</pre>
 				<pre>DrawHighlightEvent</pre>
+				<pre>DrawHighlightEvent.HighlightBlock</pre>
+				<pre>DrawHighlightEvent.HighlightEntity</pre>
 				<pre>DrawScreenEvent</pre>
+				<pre>DrawScreenEvent.Post</pre>
+				<pre>DrawScreenEvent.Pre</pre>
 				<pre>DrawSelectionEvent</pre>
 				<pre>EntityEvent</pre>
 				<pre>EntityViewRenderEvent</pre>
+				<pre>EntityViewRenderEvent.CameraSetup</pre>
+				<pre>EntityViewRenderEvent.FogColors</pre>
+				<pre>EntityViewRenderEvent.FOVModifier</pre>
 				<pre>FogEvent</pre>
+				<pre>FogEvent.FogDensity</pre>
 				<pre>FOVUpdateEvent</pre>
 				<pre>GuiContainerEvent</pre>
+				<pre>GuiContainerEvent.DrawBackground</pre>
+				<pre>GuiContainerEvent.DrawForeground</pre>
 				<pre>GuiOpenEvent</pre>
 				<pre>GuiScreenEvent</pre>
-				<pre>IModBusEvent</pre>
 				<pre>InitGuiEvent</pre>
+				<pre>InitGuiEvent.Post</pre>
+				<pre>InitGuiEvent.Pre</pre>
 				<pre>InputEvent</pre>
 				<pre>InputUpdateEvent</pre>
 				<pre>ItemTooltipEvent</pre>
 				<pre>KeyboardCharTypedEvent</pre>
+				<pre>KeyboardCharTypedEvent.Post</pre>
+				<pre>KeyboardCharTypedEvent.Pre</pre>
 				<pre>KeyboardKeyEvent</pre>
 				<pre>KeyboardKeyPressedEvent</pre>
+				<pre>KeyboardKeyPressedEvent.Post</pre>
+				<pre>KeyboardKeyPressedEvent.Pre</pre>
 				<pre>KeyboardKeyReleasedEvent</pre>
+				<pre>KeyboardKeyReleasedEvent.Post</pre>
+				<pre>KeyboardKeyReleasedEvent.Pre</pre>
 				<pre>KeyInputEvent</pre>
 				<pre>LoggedInEvent</pre>
 				<pre>LoggedOutEvent</pre>
 				<pre>ModelBakeEvent</pre>
 				<pre>ModelRegistryEvent</pre>
 				<pre>MouseClickedEvent</pre>
+				<pre>MouseClickedEvent.Post</pre>
+				<pre>MouseClickedEvent.Pre</pre>
 				<pre>MouseDragEvent</pre>
+				<pre>MouseDragEvent.Post</pre>
+				<pre>MouseDragEvent.Pre</pre>
 				<pre>MouseInputEvent</pre>
 				<pre>MouseReleasedEvent</pre>
+				<pre>MouseReleasedEvent.Post</pre>
+				<pre>MouseReleasedEvent.Pre</pre>
 				<pre>MouseScrollEvent</pre>
+				<pre>MouseScrollEvent.Post</pre>
+				<pre>MouseScrollEvent.Pre</pre>
 				<pre>ParticleFactoryRegisterEvent</pre>
 				<pre>PlayerEvent</pre>
 				<pre>PotionShiftEvent</pre>
@@ -90,18 +121,34 @@
 				<pre>RenderBlockOverlayEvent</pre>
 				<pre>RenderFogEvent</pre>
 				<pre>RenderGameOverlayEvent</pre>
+				<pre>RenderGameOverlayEvent.Post</pre>
+				<pre>RenderGameOverlayEvent.Pre</pre>
+				<pre>RenderGameOverlayEvent.Pre.BossInfo</pre>
+				<pre>RenderGameOverlayEvent.Pre.Chat</pre>
+				<pre>RenderGameOverlayEvent.Pre.Text</pre>
 				<pre>RenderHandEvent</pre>
 				<pre>RenderItemInFrameEvent</pre>
 				<pre>RenderLivingEvent</pre>
 				<pre>RenderNameplateEvent</pre>
 				<pre>RenderPlayerEvent</pre>
+				<pre>RenderPlayerEvent.Post</pre>
+				<pre>RenderPlayerEvent.Pre</pre>
 				<pre>RenderTooltipEvent</pre>
+				<pre>RenderTooltipEvent.Color</pre>
+				<pre>RenderTooltipEvent.Post</pre>
+				<pre>RenderTooltipEvent.Post.</pre>
+				<pre>RenderTooltipEvent.Post.PostBackground</pre>
+				<pre>RenderTooltipEvent.Post.PostText</pre>
+				<pre>RenderTooltipEvent.PostBackground</pre>
+				<pre>RenderTooltipEvent.PostText</pre>
+				<pre>RenderTooltipEvent.Pre</pre>
 				<pre>RenderWorldLastEvent</pre>
 				<pre>RespawnEvent</pre>
 				<pre>ScreenshotEvent</pre>
 				<pre>TextureStitchEvent</pre>
+				<pre>TextureStitchEvent.Post</pre>
+				<pre>TextureStitchEvent.Pre</pre>
 				<h3>net.minecraftforge.client.event.sound</h3>
-				<pre>IModBusEvent</pre>
 				<pre>PlaySoundEvent</pre>
 				<pre>PlaySoundSourceEvent</pre>
 				<pre>PlayStreamingSourceEvent</pre>
@@ -116,25 +163,33 @@
 				<pre>ClientTickEvent</pre>
 				<pre>CommandEvent</pre>
 				<pre>DifficultyChangeEvent</pre>
-				<pre>IModBusEvent</pre>
 				<pre>LootTableLoadEvent</pre>
 				<pre>PlayerTickEvent</pre>
 				<pre>RegisterCommandsEvent</pre>
 				<pre>RegistryEvent</pre>
+				<pre>RegistryEvent.NewRegistry</pre>
 				<pre>RenderTickEvent</pre>
 				<pre>ServerChatEvent</pre>
 				<pre>ServerTickEvent</pre>
 				<pre>TagsUpdatedEvent</pre>
+				<pre>TagsUpdatedEvent.CustomTagTypes</pre>
+				<pre>TagsUpdatedEvent.VanillaTagTypes</pre>
 				<pre>TickEvent</pre>
 				<pre>WorldTickEvent</pre>
 				<h3>net.minecraftforge.event.brewing</h3>
 				<pre>PlayerBrewedPotionEvent</pre>
 				<pre>PlayerEvent</pre>
 				<pre>PotionBrewEvent</pre>
+				<pre>PotionBrewEvent.Post</pre>
+				<pre>PotionBrewEvent.Pre</pre>
 				<h3>net.minecraftforge.event.enchanting</h3>
 				<pre>EnchantmentLevelSetEvent</pre>
 				<h3>net.minecraftforge.event.entity</h3>
 				<pre>EntityEvent</pre>
+				<pre>EntityEvent.CanUpdate</pre>
+				<pre>EntityEvent.EnteringChunk</pre>
+				<pre>EntityEvent.EntityConstructing</pre>
+				<pre>EntityEvent.Size</pre>
 				<pre>EntityJoinWorldEvent</pre>
 				<pre>EntityLeaveWorldEvent</pre>
 				<pre>EntityMobGriefingEvent</pre>
@@ -143,6 +198,10 @@
 				<pre>EntityTravelToDimensionEvent</pre>
 				<pre>PlaySoundAtEntityEvent</pre>
 				<pre>ProjectileImpactEvent</pre>
+				<pre>ProjectileImpactEvent.Arrow</pre>
+				<pre>ProjectileImpactEvent.Fireball</pre>
+				<pre>ProjectileImpactEvent.FireworkRocket</pre>
+				<pre>ProjectileImpactEvent.Throwable</pre>
 				<pre>SoundEvent</pre>
 				<h3>net.minecraftforge.event.entity.item</h3>
 				<pre>EntityEvent</pre>
@@ -160,6 +219,10 @@
 				<pre>LivingDestroyBlockEvent</pre>
 				<pre>LivingDropsEvent</pre>
 				<pre>LivingEntityUseItemEvent</pre>
+				<pre>LivingEntityUseItemEvent.Finish</pre>
+				<pre>LivingEntityUseItemEvent.Start</pre>
+				<pre>LivingEntityUseItemEvent.Stop</pre>
+				<pre>LivingEntityUseItemEvent.Tick</pre>
 				<pre>LivingEquipmentChangeEvent</pre>
 				<pre>LivingEvent</pre>
 				<pre>LivingExperienceDropEvent</pre>
@@ -171,6 +234,9 @@
 				<pre>LivingPackSizeEvent</pre>
 				<pre>LivingSetAttackTargetEvent</pre>
 				<pre>LivingSpawnEvent</pre>
+				<pre>LivingSpawnEvent.AllowDespawn</pre>
+				<pre>LivingSpawnEvent.CheckSpawn</pre>
+				<pre>LivingSpawnEvent.SpecialSpawn</pre>
 				<pre>LivingUpdateEvent</pre>
 				<pre>LootingLevelEvent</pre>
 				<pre>PotionAddedEvent</pre>
@@ -199,10 +265,28 @@
 				<pre>LivingEvent</pre>
 				<pre>PlayerChangedDimensionEvent</pre>
 				<pre>PlayerContainerEvent</pre>
+				<pre>PlayerContainerEvent.Close</pre>
+				<pre>PlayerContainerEvent.Open</pre>
 				<pre>PlayerDestroyItemEvent</pre>
 				<pre>PlayerEvent</pre>
+				<pre>PlayerEvent.BreakSpeed</pre>
+				<pre>PlayerEvent.Clone</pre>
+				<pre>PlayerEvent.HarvestCheck</pre>
+				<pre>PlayerEvent.LoadFromFile</pre>
+				<pre>PlayerEvent.NameFormat</pre>
+				<pre>PlayerEvent.SaveToFile</pre>
+				<pre>PlayerEvent.StartTracking</pre>
+				<pre>PlayerEvent.StopTracking</pre>
+				<pre>PlayerEvent.Visibility</pre>
 				<pre>PlayerFlyableFallEvent</pre>
 				<pre>PlayerInteractEvent</pre>
+				<pre>PlayerInteractEvent.EntityInteract</pre>
+				<pre>PlayerInteractEvent.EntityInteractSpecific</pre>
+				<pre>PlayerInteractEvent.LeftClickBlock</pre>
+				<pre>PlayerInteractEvent.LeftClickEmpty</pre>
+				<pre>PlayerInteractEvent.RightClickBlock</pre>
+				<pre>PlayerInteractEvent.RightClickEmpty</pre>
+				<pre>PlayerInteractEvent.RightClickItem</pre>
 				<pre>PlayerLoggedInEvent</pre>
 				<pre>PlayerLoggedOutEvent</pre>
 				<pre>PlayerRespawnEvent</pre>
@@ -210,6 +294,9 @@
 				<pre>PlayerSleepInBedEvent</pre>
 				<pre>PlayerWakeUpEvent</pre>
 				<pre>PlayerXpEvent</pre>
+				<pre>PlayerXpEvent.LevelChange</pre>
+				<pre>PlayerXpEvent.PickupXp</pre>
+				<pre>PlayerXpEvent.XpChange</pre>
 				<pre>SleepingLocationCheckEvent</pre>
 				<pre>SleepingTimeCheckEvent</pre>
 				<pre>UseHoeEvent</pre>
@@ -225,22 +312,41 @@
 				<pre>BlockToolInteractEvent</pre>
 				<pre>BreakEvent</pre>
 				<pre>ChunkDataEvent</pre>
+				<pre>ChunkDataEvent.Load</pre>
+				<pre>ChunkDataEvent.Save</pre>
 				<pre>ChunkEvent</pre>
+				<pre>ChunkEvent.Load</pre>
+				<pre>ChunkEvent.Unload</pre>
 				<pre>ChunkWatchEvent</pre>
+				<pre>ChunkWatchEvent.UnWatch</pre>
+				<pre>ChunkWatchEvent.Watch</pre>
 				<pre>CreateFluidSourceEvent</pre>
 				<pre>CropGrowEvent</pre>
+				<pre>CropGrowEvent.Post</pre>
+				<pre>CropGrowEvent.Pre</pre>
 				<pre>EntityMultiPlaceEvent</pre>
 				<pre>EntityPlaceEvent</pre>
 				<pre>ExplosionEvent</pre>
+				<pre>ExplosionEvent.Detonate</pre>
+				<pre>ExplosionEvent.Start</pre>
 				<pre>FarmlandTrampleEvent</pre>
 				<pre>FluidPlaceBlockEvent</pre>
 				<pre>NeighborNotifyEvent</pre>
 				<pre>NoteBlockEvent</pre>
+				<pre>NoteBlockEvent.Change</pre>
+				<pre>NoteBlockEvent.Play</pre>
 				<pre>PistonEvent</pre>
+				<pre>PistonEvent.Post</pre>
+				<pre>PistonEvent.Pre</pre>
 				<pre>PortalSpawnEvent</pre>
 				<pre>SaplingGrowTreeEvent</pre>
 				<pre>SleepFinishedTimeEvent</pre>
 				<pre>WorldEvent</pre>
+				<pre>WorldEvent.CreateSpawnPosition</pre>
+				<pre>WorldEvent.Load</pre>
+				<pre>WorldEvent.PotentialSpawns</pre>
+				<pre>WorldEvent.Save</pre>
+				<pre>WorldEvent.Unload</pre>
 				<h3>net.minecraftforge.fml.event.lifecycle</h3>
 				<pre>FMLClientSetupEvent</pre>
 				<pre>FMLCommonSetupEvent</pre>
@@ -250,7 +356,6 @@
 				<pre>FMLLoadCompleteEvent</pre>
 				<pre>FMLModIdMappingEvent</pre>
 				<pre>GatherDataEvent</pre>
-				<pre>IModBusEvent</pre>
 				<pre>InterModEnqueueEvent</pre>
 				<pre>InterModProcessEvent</pre>
 				<pre>ModLifecycleEvent</pre>
