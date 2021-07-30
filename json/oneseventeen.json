@@ -1,15 +1,49 @@
 [
 	{
-		"net.minecraft.util": [ 
-			"SoundEvent"
+		"net.minecraft.client.gui.components": [ 
+			"BossEvent",
+			"BossEvent.BossBarColor",
+			"BossEvent.BossBarOverlay",
+			"LerpingBossEvent"
 		],
-		"net.minecraft.util.text.event": [ 
+		"net.minecraft.gametest.framework": [ 
+			"GameTestEvent"
+		],
+		"net.minecraft.network.chat": [ 
 			"ClickEvent",
 			"ClickEvent.Action",
 			"HoverEvent",
 			"HoverEvent.Action",
-			"HoverEvent.EntityHover",
-			"HoverEvent.ItemHover"
+			"HoverEvent.EntityTooltipInfo",
+			"HoverEvent.ItemStackInfo"
+		],
+		"net.minecraft.server.bossevents": [ 
+			"BossEvent.BossBarColor.WHITE,",
+			"CustomBossEvent",
+			"ServerBossEvent"
+		],
+		"net.minecraft.server.level": [ 
+			"BossEvent",
+			"BossEvent.BossBarColor",
+			"BossEvent.BossBarOverlay",
+			"ServerBossEvent"
+		],
+		"net.minecraft.sounds": [ 
+			"SoundEvent"
+		],
+		"net.minecraft.world": [ 
+			"BossEvent",
+			"BossEvent.BossBarColor",
+			"BossEvent.BossBarOverlay"
+		],
+		"net.minecraft.world.entity": [ 
+			"EntityEvent"
+		],
+		"net.minecraft.world.level.block": [ 
+			"LevelEvent"
+		],
+		"net.minecraft.world.level.gameevent": [ 
+			"GameEvent"
 		],
 		"net.minecraftforge.client.event": [ 
 			"BackgroundDrawnEvent",
@@ -21,13 +55,12 @@
 			"ColorHandlerEvent",
 			"ColorHandlerEvent.Block",
 			"ColorHandlerEvent.Item",
-			"DrawHighlightEvent",
-			"DrawHighlightEvent.HighlightBlock",
-			"DrawHighlightEvent.HighlightEntity",
 			"DrawScreenEvent",
 			"DrawScreenEvent.Post",
 			"DrawScreenEvent.Pre",
 			"DrawSelectionEvent",
+			"DrawSelectionEvent.HighlightBlock",
+			"DrawSelectionEvent.HighlightEntity",
 			"EntityEvent",
 			"EntityViewRenderEvent",
 			"EntityViewRenderEvent.CameraSetup",
@@ -58,6 +91,7 @@
 			"KeyboardKeyReleasedEvent.Post",
 			"KeyboardKeyReleasedEvent.Pre",
 			"KeyInputEvent",
+			"LerpingBossEvent",
 			"LoggedInEvent",
 			"LoggedOutEvent",
 			"ModelBakeEvent",
@@ -84,9 +118,11 @@
 			"RenderFogEvent",
 			"RenderGameOverlayEvent",
 			"RenderGameOverlayEvent.Post",
+			"RenderGameOverlayEvent.Post.PostLayer",
 			"RenderGameOverlayEvent.Pre",
 			"RenderGameOverlayEvent.Pre.BossInfo",
 			"RenderGameOverlayEvent.Pre.Chat",
+			"RenderGameOverlayEvent.Pre.PreLayer",
 			"RenderGameOverlayEvent.Pre.Text",
 			"RenderHandEvent",
 			"RenderItemInFrameEvent",
@@ -159,22 +195,23 @@
 			"EntityAttributeModificationEvent.",
 			"EntityEvent",
 			"EntityEvent.CanUpdate",
-			"EntityEvent.EnteringChunk",
 			"EntityEvent.EntityConstructing",
+			"EntityEvent.Projectile>",
 			"EntityEvent.Size",
 			"EntityJoinWorldEvent",
 			"EntityLeaveWorldEvent",
 			"EntityMobGriefingEvent",
 			"EntityMountEvent",
 			"EntityStruckByLightningEvent",
+			"EntityTeleportEvent",
+			"EntityTeleportEvent.ChorusFruit",
+			"EntityTeleportEvent.EnderEntity",
+			"EntityTeleportEvent.EnderPearl",
+			"EntityTeleportEvent.SpreadPlayersCommand",
+			"EntityTeleportEvent.TeleportCommand",
 			"EntityTravelToDimensionEvent",
 			"PlaySoundAtEntityEvent",
 			"ProjectileImpactEvent",
-			"ProjectileImpactEvent.Arrow",
-			"ProjectileImpactEvent.Fireball",
-			"ProjectileImpactEvent.FireworkRocket",
-			"ProjectileImpactEvent.FishingBobber",
-			"ProjectileImpactEvent.Throwable",
 			"SoundEvent"
 		],
 		"net.minecraftforge.event.entity.item": [ 
@@ -186,15 +223,7 @@
 		"net.minecraftforge.event.entity.living": [ 
 			"AnimalTameEvent",
 			"BabyEntitySpawnEvent",
-			"EnderTeleportEvent",
 			"EntityEvent",
-			"EntityTeleportEvent",
-			"EntityTeleportEvent.ChorusFruit",
-			"EntityTeleportEvent.EnderEntity",
-			"EntityTeleportEvent.EnderPearl",
-			"EntityTeleportEvent.EnderPearl.",
-			"EntityTeleportEvent.SpreadPlayersCommand",
-			"EntityTeleportEvent.TeleportCommand",
 			"LivingAttackEvent",
 			"LivingConversionEvent",
 			"LivingConversionEvent.Post",
@@ -266,7 +295,6 @@
 			"PlayerEvent.StartTracking",
 			"PlayerEvent.StopTracking",
 			"PlayerEvent.TabListNameFormat",
-			"PlayerEvent.Visibility",
 			"PlayerFlyableFallEvent",
 			"PlayerInteractEvent",
 			"PlayerInteractEvent.EntityInteract",
@@ -338,33 +366,31 @@
 			"WorldEvent",
 			"WorldEvent.CreateSpawnPosition",
 			"WorldEvent.Load",
-			"WorldEvent.PotentialSpawns",
 			"WorldEvent.Save",
 			"WorldEvent.Unload"
+		],
+		"net.minecraftforge.fml.event.config": [ 
+			"IConfigEvent",
+			"ModConfigEvent",
+			"ModConfigEvent.Loading",
+			"ModConfigEvent.Reloading"
 		],
 		"net.minecraftforge.fml.event.lifecycle": [ 
 			"FMLClientSetupEvent",
 			"FMLCommonSetupEvent",
 			"FMLConstructModEvent",
 			"FMLDedicatedServerSetupEvent",
-			"FMLFingerprintViolationEvent",
 			"FMLLoadCompleteEvent",
-			"FMLModIdMappingEvent",
-			"GatherDataEvent",
 			"InterModEnqueueEvent",
 			"InterModProcessEvent",
 			"ModLifecycleEvent",
 			"ParallelDispatchEvent"
 		],
-		"net.minecraftforge.fml.event.server": [ 
-			"FMLServerAboutToStartEvent",
-			"FMLServerStartedEvent",
-			"FMLServerStartingEvent",
-			"FMLServerStoppedEvent",
-			"FMLServerStoppingEvent",
-			"ServerLifecycleEvent"
+		"net.minecraftforge.fmllegacy.event.lifecycle": [ 
+			"FMLModIdMappingEvent",
+			"ModLifecycleEvent"
 		],
-		"net.minecraftforge.fml.network": [ 
+		"net.minecraftforge.fmllegacy.network": [ 
 			"ChannelRegistrationChangeEvent",
 			"ClientCustomPayloadEvent",
 			"ClientCustomPayloadLoginEvent",
@@ -373,6 +399,17 @@
 			"NetworkEvent",
 			"ServerCustomPayloadEvent",
 			"ServerCustomPayloadLoginEvent"
+		],
+		"net.minecraftforge.fmlserverevents": [ 
+			"FMLServerAboutToStartEvent",
+			"FMLServerStartedEvent",
+			"FMLServerStartingEvent",
+			"FMLServerStoppedEvent",
+			"FMLServerStoppingEvent",
+			"ServerLifecycleEvent"
+		],
+		"net.minecraftforge.forge.event.lifecycle": [ 
+			"GatherDataEvent"
 		]
 	}
 ]
