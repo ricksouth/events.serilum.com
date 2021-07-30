@@ -67,6 +67,8 @@
 			"RenderLivingEvent",
 			"RenderPlayerEvent",
 			"RenderPlayerEvent.Post",
+			"RenderPlayerEvent.Post.PostBackground",
+			"RenderPlayerEvent.Post.PostText",
 			"RenderPlayerEvent.Pre",
 			"RenderPlayerEvent.SetArmorModel",
 			"RenderPlayerEvent.Specials",
@@ -76,9 +78,6 @@
 			"RenderTooltipEvent",
 			"RenderTooltipEvent.Color",
 			"RenderTooltipEvent.Post",
-			"RenderTooltipEvent.Post.",
-			"RenderTooltipEvent.Post.PostBackground",
-			"RenderTooltipEvent.Post.PostText",
 			"RenderTooltipEvent.PostBackground",
 			"RenderTooltipEvent.PostText",
 			"RenderTooltipEvent.Pre",
@@ -324,7 +323,6 @@
 		],
 		"net.minecraftforge.fml.client.event": [ 
 			"ConfigChangedEvent",
-			"ConfigChangedEvent.",
 			"OnConfigChangedEvent",
 			"PostConfigChangedEvent"
 		],
